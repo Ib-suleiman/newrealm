@@ -1,0 +1,98 @@
+<!-- recruitment.html -->
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recruitment Services | NewRealm Multi Biz Resources</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="{% static 'work/css/style.css' %}">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="{% static 'work/image/logo.jpg' %}" alt="NewRealm Logo">
+        <span class="logo-text">NewRealm Multi Biz</span>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="mainNav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+            <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+            <li><a href="{% url 'training' %}">Skills Training</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Recruitment &amp; Staff Capacity Development</h1>
+      <p>Trusted, fast, and reliable staffing solutions tailored to your needs</p>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <div class="container">
+      <div class="service-details">
+        <h2>Our Recruitment Services</h2>
+        <p>We specialize in connecting businesses with qualified professionals who can contribute to your organizational success.</p>
+        <ul>
+          <li>Administrative Staff Recruitment</li>
+          <li>Domestic Staff Recruitment</li>
+          <li>Staff Capacity Development &amp; Training</li>
+        </ul>
+        <div class="service-features">
+          <div class="feature-card">
+            <i class="fas fa-search"></i>
+            <h3>Thorough Screening</h3>
+            <p>We carefully vet all candidates to ensure they meet your requirements.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-clock"></i>
+            <h3>Quick Turnaround</h3>
+            <p>We understand urgency and work quickly to fill your staffing needs.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-handshake"></i>
+            <h3>Long-term Matches</h3>
+            <p>We focus on finding candidates who will grow with your organization.</p>
+          </div>
+        </div>
+        <a href="{% url 'contact' %}" class="btn">Need Staff? Contact Us Now</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (same as index.html) -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Us, Quick Links, Contact Info columns -->
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> NewRealm Multi Biz Resources. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="{% static 'work/js/script.js' %}"></script>
+</body>
+</html>

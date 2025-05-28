@@ -1,0 +1,88 @@
+<!-- cleaning.html -->
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleaning Services | NewRealm Multi Biz Resources</title>
+  <link rel="stylesheet" href="{% static 'work/css/style.css' %}">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="{% static 'work/image/logo.jpg' %}" alt="NewRealm Logo">
+            <span class="logo-text">NewRealm Multi Biz</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+              <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+              <li><a href="{% url 'training' %}">Skills Training</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Professional Cleaning Services</h1>
+      <p>Spotless &amp; Reliable cleaning solutions for homes and businesses</p>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <div class="container">
+      <div class="service-details">
+        <h2>Our Cleaning Services</h2>
+        <p>We deliver impeccable cleaning with attention to detail using eco-friendly products and professional equipment.</p>
+        <ul>
+          <li>Tile and Carpet Cleaning</li>
+          <li>Interior &amp; Exterior Cleaning</li>
+          <li>Dusting of All Surfaces</li>
+          <li>Fumigation &amp; Environmental Treatment</li>
+          <li>Window &amp; Door Cleaning/Polishing</li>
+        </ul>
+        <div class="service-features">
+          <div class="feature-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Eco-Friendly</h3>
+            <p>We use environmentally safe cleaning products.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Professional Staff</h3>
+            <p>Our cleaners are trained professionals.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Flexible Scheduling</h3>
+            <p>We work around your schedule.</p>
+          </div>
+        </div>
+        <a href="contact.html" class="btn">Book a Cleaning Session Today</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> NewRealm Multi Biz Resources. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="{% static 'work/js/script.js' %}"></script>
+</body>
+</html>

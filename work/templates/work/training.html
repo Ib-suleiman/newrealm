@@ -1,0 +1,93 @@
+<!-- training.html -->
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills Acquisition Training | NewRealm Multi Biz Resources</title>
+  <link rel="stylesheet" href="{% static 'work/css/style.css' %}">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="{% static 'work/image/logo.jpg' %}" alt="NewRealm Logo">
+                <span class="logo-text">NewRealm Multi Biz</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+                  <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+                  <li><a href="{% url 'training' %}">Skills Training</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Skills Acquisition Training</h1>
+      <p>Empowering you with skills for a brighter future</p>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <div class="container">
+      <div class="service-details">
+        <h2>Our Training Programs</h2>
+        <p>We offer practical, hands-on training in various skills to help individuals become self-reliant and businesses grow their workforce.</p>
+        <ul>
+          <li>Fashion Design</li>
+          <li>Catering Services</li>
+          <li>Detergent &amp; Soap Making</li>
+          <li>Cream &amp; Deodorant Production</li>
+          <li>Event Planning &amp; Management</li>
+          <li>Make-Up Artistry</li>
+          <li>Decorations</li>
+          <li>Career Development for Children</li>
+          <li>Life Guidance &amp; Counseling</li>
+        </ul>
+        <div class="service-features">
+          <div class="feature-card">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Expert Instructors</h3>
+            <p>Learn from industry professionals with years of experience.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-certificate"></i>
+            <h3>Certification</h3>
+            <p>Receive recognized certification upon completion.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Job Placement</h3>
+            <p>We help connect graduates with employment opportunities.</p>
+          </div>
+        </div>
+        <a href="{% url 'contact' %}" class="btn">Enroll Now - Call: 08039673694</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> NewRealm Multi Biz Resources. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="{% static 'work/js/script.js' %}"></script>
+</body>
+</html>

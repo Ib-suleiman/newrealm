@@ -1,0 +1,162 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewRealm Multi Biz Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'work/css/style.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="{% static 'work/image/logo.jpg' %}" alt="NewRealm Logo">
+                <span class="logo-text">NewRealm Multi Biz</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+                    <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+                    <li><a href="{% url 'training' %}">Skills Training</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Homepage Content -->
+    <main id="homepage">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>NewRealm Multi Biz Resources</h1>
+                    <p>Fast, Reliable, and Professional Services with Integrity</p>
+                    <div class="hero-btns">
+                        <a href="#services" class="btn">Explore Our Services</a>
+                        <a href="contact.html" class="btn btn-accent">Contact Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="container">
+                <h2>Your Trusted Partner</h2>
+                <p>NewRealm Multi Biz Resources is a trusted firm specializing in Recruitment, Professional Cleaning Services, and Skills Acquisition Training. We deliver excellence with integrity and efficiency.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p>We offer comprehensive solutions tailored to meet your business and personal needs</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Recruitment</h3>
+                        <p>We connect businesses with top-tier administrative and domestic staff.</p>
+                        <a href="recruitment.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Estate Management></h3>
+                            <p>Comprehensive property and facility management services to protect and enhance your real estate investments.</p>
+                            <a href="recruitment.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3>Cleaning Services</h3>
+                        <p>Professional, thorough, and eco-friendly cleaning solutions.</p>
+                        <a href="cleaning.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Skills Training</h3>
+                        <p>Empowering individuals with practical skills for career growth.</p>
+                        <a href="training.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Enterpreneurship Education</h3>
+                        <p>Equipping individuals with innovative thinking and business skills to start and grow successful ventures.</p>
+                        <a href="cleaning.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Consultancy Services</h3>
+                        <p>Expert guidance and strategic solutions tailored to your business needs.</p>
+                        <a href="cleaning.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>NewRealm Multi Biz Resources is a trusted firm specializing in Recruitment, Cleaning Services, and Skills Acquisition Training.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61576316017564"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/2348145034047"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/new_realm?igsh=ZjZxYjd3MnUwbDMy"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+                        <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+                        <li><a href="{% url 'training' %}">Skills Training</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> 08039673694 | 08145034047</p>
+                        <p><i class="fas fa-envelope"></i> newrealmmultibizresources1@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> No. 4 Gembu Close, Off Gimbiya Street, Area 11, Garki, Abuja, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> NewRealm Multi Biz Resources. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'work/js/script.js' %}"></script>
+</body>
+</html>
