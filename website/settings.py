@@ -137,3 +137,13 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'ibrahimsuleiman77@gmail.com'
 EMAIL_HOST_PASSWORD = 'njsdluowwcfvygiq'  #App Password
 CONTACT_EMAIL = 'ibrahimsuleiman77@gmail.com'
+
+
+DEBUG = False
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+MEDIA_ROOT = BASE_DIR / 'media'
+# Security (for production)
+SECURE_HSTS_SECONDS = 31536000
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
