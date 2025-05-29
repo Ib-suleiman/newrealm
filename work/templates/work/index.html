@@ -15,7 +15,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="{% static 'work/image/logo.jpg' %}" alt="NewRealm Logo">
+                <img src="{% static 'work/image/logo.png' %}" alt="NewRealm Logo">
                 <span class="logo-text">NewRealm Multi Biz</span>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -43,7 +43,7 @@
                     <p>Fast, Reliable, and Professional Services with Integrity</p>
                     <div class="hero-btns">
                         <a href="#services" class="btn">Explore Our Services</a>
-                        <a href="contact.html" class="btn btn-accent">Contact Us Now</a>
+                        <a href="{% url 'contact' %}" class="btn btn-accent">Contact Us Now</a>
                     </div>
                 </div>
             </div>
