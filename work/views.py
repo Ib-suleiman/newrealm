@@ -19,6 +19,15 @@ def recruitment(request):
 def training(request):
     return render(request, 'work/training.html')
 
+def enterpreneurship(request):
+    return render(request, 'work/enterpreneurship.html')
+
+def consultancy(request):
+    return render(request, 'work/consultancy.html')
+
+def estate_management(request):
+    return render(request, 'work/estate-management.html')
+
 def contact_us(request):
     if request.method == 'POST':
         name = request.POST.get('name')

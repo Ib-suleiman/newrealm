@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enterpreneurship | NewRealm Multi Biz Resources</title>
+  <link rel="stylesheet" href="{% static 'work/css/style.css' %}">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="{% static 'work/image/Logo.jpg' %}" alt="NewRealm Logo">
+            <span class="logo-text">NewRealm Multi Biz</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+              <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+              <li><a href="{% url 'training' %}">Skills Training</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <main>
+    <section class="hero entrepreneurship-hero">
+      <h1>Entrepreneurship Education & Business Empowerment</h1>
+    </section>
+
+    <section class="content">
+      <h2>Build Your Future as an Entrepreneur</h2>
+      <p>
+        At NewRealm Multi Biz Resources, we believe in nurturing business ideas and turning passion into sustainable income. Our entrepreneurship education programs are designed to help individuals acquire entrepreneurial mindsets, business skills, and access to mentorship and funding opportunities.
+      </p>
+
+      <h3>What We Offer:</h3>
+      <ul>
+        <li>Entrepreneurship Mindset & Ideation Workshops</li>
+        <li>Small Business Management Training</li>
+        <li>Financial Literacy & Budgeting</li>
+        <li>Marketing & Branding Essentials</li>
+        <li>Pitch Deck Preparation & Business Plan Writing</li>
+        <li>Access to Mentors and Investors</li>
+        <li>Starter Kits for Selected Businesses</li>
+      </ul>
+
+      <p class="highlight">Empowering emerging entrepreneurs to build resilient, impactful businesses.</p>
+      <a class="cta-button" href="tel:08039673694">Join Our Next Cohort – Call: 08039673694</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; NewRealm Multi Biz Resources</p>
+  </footer>
+  <script src="{% static 'work/js/script.js' %}"></script>
+</body>
+</html>

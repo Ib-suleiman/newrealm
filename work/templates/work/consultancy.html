@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultancy | NewRealm Multi Biz Resources</title>
+  <link rel="stylesheet" href="{% static 'work/css/style.css' %}">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="{% static 'work/image/Logo.jpg' %}" alt="NewRealm Logo">
+            <span class="logo-text">NewRealm Multi Biz</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="{% url 'recruitment' %}">Recruitment</a></li>
+              <li><a href="{% url 'cleaning' %}">Cleaning Services</a></li>
+              <li><a href="{% url 'training' %}">Skills Training</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <main>
+    <section class="hero consultancy-hero">
+      <h1>Professional Consultancy Services</h1>
+    </section>
+
+    <section class="content">
+      <h2>Your Strategic Growth Partner</h2>
+      <p>
+        NewRealm Multi Biz Resources offers top-tier consultancy services tailored to empower businesses, institutions, and individuals. We deliver expert guidance to help you make informed decisions, drive operational excellence, and achieve your goals with confidence.
+      </p>
+
+      <h3>Our Consultancy Services Include:</h3>
+      <ul>
+        <li>Business Development & Growth Strategy</li>
+        <li>Workforce Planning & HR Advisory</li>
+        <li>Organizational Training & Restructuring</li>
+        <li>School/Institutional Management Support</li>
+        <li>Project & Program Evaluation</li>
+        <li>Small Business Setup & Compliance Guidance</li>
+        <li>Policy Design & Implementation Advisory</li>
+      </ul>
+
+      <p class="highlight">We bring industry knowledge and experience to help you overcome challenges and seize opportunities.</p>
+      <a class="cta-button" href="tel:08039673694">Consult With Us – Call: 08039673694</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; NewRealm Multi Biz Resources</p>
+  </footer>
+  <script src="{% static 'work/js/script.js' %}"></script>
+</body>
+</html>
